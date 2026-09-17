@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tugas 1 - Grade Nilai</title>
+</head>
+<body>
+<script>
+  let nama = prompt("Masukkan Nama Siswa:");
+  let nilai = parseInt(prompt("Masukkan Nilai Angka (0-100):"));
+
+  let grade;
+  if (nilai >= 85) {
+    grade = "A";
+  } else if (nilai >= 75) {
+    grade = "B";
+  } else if (nilai >= 60) {
+    grade = "C";
+  } else {
+    grade = "D";
+  }
+
+  document.write("<h2>Hasil Penentuan Grade</h2>");
+  document.write("Nama Siswa: " + nama + "<br>");
+  document.write("Nilai Angka: " + nilai + "<br>");
+  document.write("Grade: <b>" + grade + "</b>");
+</script>
+</body>
+</html>
